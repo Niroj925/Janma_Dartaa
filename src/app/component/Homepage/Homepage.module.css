@@ -15,4 +15,18 @@
     width: 1200px;
     height: 940px;
   }
+
+  @media (max-width:550px){
+
+
+    .container h1{
+      font-size:1.1rem;
+    }
+
+    .image {
+   
+      width: 850px;
+      height: 640px;
+    }
+  }
   
