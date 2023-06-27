@@ -1,0 +1,93 @@
+.NavBar{
+    width:80%;
+    margin:3rem auto;
+    position: relative;
+}
+
+.NavBar_box_appbar{
+    display:flex;
+    align-items:flex-end;
+    justify-content: space-between;
+}
+
+.NavBar_box_appbar_menu{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    border-bottom: 2px solid transparent;
+    transition: all .3s ease-in-out;
+}
+.NavBar_box_appbar_menu_items:hover{
+ color: #F18303;
+}
+
+.active_btn{
+    color: #F18303;
+    border-bottom: 2px solid #F18303;
+    padding-bottom: 1rem;
+
+}
+
+
+.NavBar_box_menu_close{
+    display: none;
+}
+
+.NavBar_box_menu_open{
+    display: none;
+}
+
+.mobile_menu{
+    display: none;
+}
+
+
+@media (max-width:35em){
+    .NavBar{
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .NavBar_box{
+        grid-template-columns: .6fr 2fr;
+        justify-content: space-between;
+    }
+   
+    .NavBar_box_menu_open{
+        display: block;
+    }
+   
+    .NavBar_box_open_menu{
+        position: fixed;
+        z-index: 111111;
+        background-color: #292F3F;
+        width: 100%;
+        flex-direction: column;
+        height: 100vh;
+        inset: 0 0 0 0;
+        padding: 4rem;
+        display: none;
+    }
+    .mobile_menu{
+        display: block;
+        position: fixed;
+        z-index: 111111;
+        background-color: #292F3F;
+        inset: 0 0 0 0;
+        text-align: center;
+        padding-top: 4rem;
+    }
+    .mobile_menu_items{
+        margin-top: 1rem;
+    }
+    .mobile_menu_btn{
+        padding-top: 2rem;
+    }
+
+    .NavBar_box_appbar_menu{
+        display: none;
+    }
+}  
+
+
+   

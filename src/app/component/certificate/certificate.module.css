@@ -1,0 +1,39 @@
+.certificate {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000;
+    font-family: Arial, sans-serif;
+  }
+  
+ .section h1 {
+    text-align: center;
+  }
+  
+ .section h2 {
+    margin-top: 10px;
+  }
+  
+ .certificate hr {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 20px 0;
+  }
+  
+  .certificateNumber {
+    text-align: right;
+  }
+  
+  .section {
+    margin-top: 20px;
+  }
+  
+  .info {
+    margin-left: 20px;
+  }
+  
+  .footer {
+    margin-top: 30px;
+    text-align: center;
+  }
+  

@@ -1,0 +1,18 @@
+/* Homepage.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    height: 100vh;
+  }
+  
+  .image {
+    max-width: 100%;
+    max-height: 100%;
+    width: 1200px;
+    height: 940px;
+  }
+  

@@ -1,0 +1,49 @@
+.alluser_info{
+    width:80%;
+    margin:4rem auto;
+    font-size: 1.5rem;
+}
+
+.alluser{
+   width:80%;
+   margin:2rem auto;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap:3rem; 
+}
+
+.userListContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .userCard {
+    width: 450px;
+    height: 100px;
+    background-color: #f2f2f2;
+    color: #292f3f;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 1.15rem;
+    display: table-column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+@media (max-width:35em){
+    .alluser_info{
+        width: 90%;
+        font-size: 1rem;
+        margin: 2rem auto;
+    }
+
+    .alluser{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}

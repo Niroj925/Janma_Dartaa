@@ -1,0 +1,117 @@
+
+.Form{
+    width: 100%;
+    margin: 1rem;
+    
+ }
+
+ @media (max-width:750px){
+    .Form{
+       width:55% 
+    }
+    
+   
+ }
+
+ @media (max-width:550px)
+ {
+    .Form{
+        width:75% 
+     }
+    
+ }
+
+ .Form_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .Form_box h3{
+    font-size: 2rem;
+    color: #F18303;
+    line-height: .9;
+ }
+ .Form_box h1 span{
+    display: block;
+    font-size: 5rem;
+ }
+ .Form_box small{
+    font-size: 1.2rem;
+    color: #F18303;
+ }
+  
+ .field{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-height: 300px;
+    overflow-y: scroll;
+ }
+
+ .Form_box_right_name_info{
+    display: flex;
+    align-items: center;
+    margin-block: 1rem;
+    gap:1rem;
+    background-color: rgba(0,0,0,0.25);
+    padding:1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+
+ }
+
+ .Form_box_right_name_info input{
+    width:100%;
+    background-color: transparent;
+    outline: none;
+    border:none;
+    color:#F18303
+ }
+
+ .Form_box_right_name_btn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:1rem;
+
+ }
+
+ .Form_box_right_name_btn button{
+    outline: none;
+    border: none;
+    color: #F18303;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.25);
+    padding: 1rem ;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    cursor: pointer;
+ }
+
+
+ @media (max-width:35em){
+    .Form{
+        width:90%;
+    }
+
+    .Form_box{
+        grid-template-columns: 1fr;
+    }
+    .Form_box_right h1{
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+    .Form_box_right h1 span{
+        font-size: 2.5rem;
+    }
+
+    .Form_box_right_name_btn{
+        display: grid;
+        grid-template-columns: 1fr;
+        z-index: 111111;
+    }
+ }

@@ -1,0 +1,20 @@
+.box{
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-bottom: 5em;
+
+}
+.box h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.certificate{
+    border:3px solid #182330;
+    border-radius: 10px;
+    padding:2rem;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
