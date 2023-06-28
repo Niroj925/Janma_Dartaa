@@ -36,8 +36,12 @@
     display: block;
     font-size: 5rem;
  }
+ .Form_box p{
+   font-size: 1.4rem;
+   color: #F18303;
+}
  .Form_box small{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #F18303;
  }
   
@@ -71,10 +75,12 @@
    border:#292f3f;
    cursor: pointer;
    outline: none;
-   color: whitesmoke;
+   /* color:rgb(105, 105, 105); */
+   color:#F18303
  }
  .gender_select_option{
    color: #292f3f;
+   /* color:#F18303 */
  }
 
  .Form_box_right_name_info input{

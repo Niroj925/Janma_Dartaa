@@ -65,8 +65,8 @@ function page() {
              <h3>
               Fill up Detail
              </h3>
-          
-             <small>data are more sensitivee</small>
+              <p>Registered data are immutable </p>
+             <small> Enter correctly </small>
 
              <form className={styles.Form_box_right_name}>
                 <div className={styles.field}>
