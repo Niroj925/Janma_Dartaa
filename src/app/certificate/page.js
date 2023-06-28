@@ -5,6 +5,7 @@ import Qrcode from '../component/Qr/qrcode'
 import { useSelector } from 'react-redux';
 import styles from './alluser.module.css';
 import Navbar from '../component/Navbar/Navbar';
+import { useRouter } from 'next/navigation';
 
 function page() {
     const [name,setName]=useState("");
@@ -15,7 +16,8 @@ function page() {
     const [isValid,setIsValid]=useState(false);
 
     const contract=useSelector((state)=>state.state.contract);
-
+   
+     const router=useRouter();
 
     useEffect(() => {
         const getUsers = async () => {
