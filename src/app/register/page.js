@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 import {toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import Navbar from '../component/Navbar/Navbar';
 function page() {
     const router=useRouter();
   // console.log('state in Form:',state);
@@ -60,6 +60,7 @@ function page() {
 
   return (
     <>
+    <Navbar/>
     <div className={styles.Form}>
       <div className={styles.Form_box}>
              <h3>
@@ -68,7 +69,7 @@ function page() {
               <p>Registered data are immutable </p>
              <small> Enter correctly </small>
 
-             <form className={styles.Form_box_right_name}>
+             <form onSubmit={RegisterCertificate} className={styles.Form_box_right_name}>
                 <div className={styles.field}>
 
               <div className={styles.Form_box_right_name_info}>
@@ -154,7 +155,7 @@ function page() {
                       onClick={()=>router.push('/')}   >
                       Cancel
                    </button> */}
-                   <button type="submit" onClick={RegisterCertificate}>Submit</button>
+                   <button type="submit">Submit</button>
                     <button onClick={handleCancel}>Cancel</button>
                  </div>
 
