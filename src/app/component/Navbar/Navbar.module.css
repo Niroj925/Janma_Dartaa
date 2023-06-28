@@ -17,6 +17,7 @@
     border-bottom: 2px solid transparent;
     transition: all .3s ease-in-out;
 }
+
 .NavBar_box_appbar_menu_items:hover{
  color: #F18303;
 }

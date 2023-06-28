@@ -5,6 +5,12 @@
     border: 1px solid #000;
     font-family: Arial, sans-serif;
   }
+
+  .certificate h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
  .section h1 {
     text-align: center;
@@ -37,3 +43,14 @@
     text-align: center;
   }
   
+  @media(max-width:550px){
+
+    .certificate {
+      width: 350px;
+      margin: 0 auto;
+      padding: 5px;
+      border: 1px solid #000;
+      font-family: Arial, sans-serif;
+    }
+
+  }

@@ -26,4 +26,14 @@
         margin-bottom: 1em;
     
     }
+
+    .box h2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+    }
+
+
 }

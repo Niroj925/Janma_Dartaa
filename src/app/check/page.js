@@ -83,7 +83,7 @@ useEffect(()=>{
     <div>
       <Navbar/>
       <div className={styles.box}>
-     <h2>Qr Code Scanning</h2>
+     <h2>QR Code Scanning</h2>
      {
       scanResult
       // ?<div>Success:<a href={"http://"+scanResult}>{scanResult}</a></div>
@@ -97,7 +97,7 @@ useEffect(()=>{
      {
       isValid && (
         <>
-          <h2 >Authorized Govermental Document</h2>
+          <h2 className={styles.title}>Authorized Govermental Document</h2>
            <BirthCertificate
              info={info}
            />
