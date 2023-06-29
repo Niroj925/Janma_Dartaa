@@ -16,6 +16,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-height: 450px;
+    overflow: scroll;
   }
   
   .userCard {
@@ -42,8 +44,6 @@
 
   .searchContainer{
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap:1rem;
     border-radius: 2rem;
     padding-inline: 1rem;
