@@ -30,8 +30,8 @@ const [open,setOpen]=useState(false);
         },
         
         {
-          menu:"About",
-          link:"/about",
+          menu:"Users",
+          link:"/users",
         },
         {
           menu:"Certificate",
