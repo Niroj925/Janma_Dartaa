@@ -70,6 +70,10 @@
         margin: 2rem auto;
     }
 
+    .alluser_info h1{
+      font-size: 1.5rem;
+    }
+
     .alluser{
         width: 90%;
         grid-template-columns: 1fr;
