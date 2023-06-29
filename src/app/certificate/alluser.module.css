@@ -65,7 +65,8 @@
     background-color: transparent;
     outline: none;
     border:none;
-    color:#F18303
+    color:#F18303;
+    font-size: 1.5rem;;
  }
 
  .Form_box_right_name_btn{

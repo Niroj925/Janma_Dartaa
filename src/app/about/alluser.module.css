@@ -33,6 +33,34 @@
     align-items: center;
     justify-content: center;
   }
+  .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .searchContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    border-radius: 2rem;
+    padding-inline: 1rem;
+    background-color: rgba(0,0,0,0.25);
+    color:#f2f2f2;
+    width: 20rem;
+}
+
+.searchContainer input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    margin-left:1.8rem;
+}
   
 
 @media (max-width:35em){
@@ -46,4 +74,19 @@
         width: 90%;
         grid-template-columns: 1fr;
     }
+    .userCard {
+        width: 350px;
+        height: 100px;
+        background-color: #f2f2f2;
+        color: #292f3f;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 10px;
+        margin: 10px;
+        font-weight: bold;
+        font-size: 1.15rem;
+        display: table-column;
+        align-items: center;
+        justify-content: center;
+      }
 }

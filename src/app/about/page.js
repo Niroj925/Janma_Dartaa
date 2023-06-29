@@ -6,9 +6,13 @@ import {useDispatch, useSelector, } from 'react-redux';
 
 function alluser() {
   const contract=useSelector((state)=>state.state.contract);
-  const account=useSelector((state)=>state.state.account);
-
 const[userLists,setUserLists]=useState([]);
+
+const [searchQuery, setSearchQuery] = useState('');
+
+const filteredUserLists = userLists.filter((user) =>
+  user.name.toLowerCase().indexOf(searchQuery.toLowerCase()) !== -1
+);
 
 useEffect(() => {
   const getUsers = async () => {
@@ -32,9 +36,18 @@ useEffect(() => {
         <div className={styles.alluser_info}>
             <h1>Registered Documents</h1>
         </div>
-       
+         <div className={styles.search}>
+        <div className={styles.searchContainer}>
+      <input
+        type="text"
+        placeholder="Search by name"
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+      />
+    </div>
+     </div>
         <div className={styles.userListContainer}>
-        {userLists.map((el, i) => (
+        {filteredUserLists.map((el, i) => (
       
           <div key={i} className={styles.userCard}>
            <p>{el.name}</p> 
