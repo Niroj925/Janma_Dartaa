@@ -42,7 +42,7 @@ useEffect(() => {
     try {
       const validation=await contract.checkBlockHash(scanResult);
       console.log('Users:',validation);
-      setIsValid(true)
+      setIsValid(validation)
     } catch (error) {
       console.error('Error:', error);
     }
@@ -95,7 +95,7 @@ useEffect(()=>{
      }
 
      {
-      isValid && (
+      isValid ? (
         <>
           <h2 className={styles.title}>Authorized Govermental Document</h2>
            <BirthCertificate
@@ -103,10 +103,7 @@ useEffect(()=>{
            />
         </>
       
-      )
-     }
-      {
-      (!isValid && scanResult )&&(
+      ):(
         <h2>This is Not Valid Documents please try Valid QR Code Only</h2>
       )
      }
